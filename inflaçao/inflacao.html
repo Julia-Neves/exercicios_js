@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflação dos Alimentos</title>
+</head>
+<body>
+    <script>
+
+        var tomate24 = 3.30
+        var tomate30 = 4.70
+        var arroz24 = 2.99
+        var arroz30 = 3.25
+        var cenoura24 = 3.99
+        var cenoura30 = 4.14
+
+        function puLaLinha(){
+            document.write("<br><br>")
+        }
+
+        function carcularInflacaoSeparadamente(valorInicial, valorFinal){
+
+            return (valorFinal - valorInicial) / valorInicial * 100
+            puLaLinha()
+        }
+
+        document.write("A inflação do tomate é de " + carcularInflacaoSeparadamente (tomate24, tomate30).toFixed(2) + "%.")
+    
+
+        
+    </script>
+</body>
+</html>
