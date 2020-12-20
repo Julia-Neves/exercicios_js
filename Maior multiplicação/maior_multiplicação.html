@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior multiplicação</title>
+</head>
+<body>
+    <script>
+   
+    var numbers = [];
+    var numeros = parseInt(prompt("Quantos números você vai digitar?")); 
+    
+    for(i = 0 ; i <  numeros ; i++){
+            numbers.push(parseInt(prompt("Digite um número:")));
+    }
+    
+    var maior1 = 0;
+    var maior2 = 0;
+    var tam = numbers.length;
+    
+    for(i = 0 ; i < tam ; i++){               
+            if(numbers[i] > maior1 && numbers[i] != maior1){
+                maior1 = numbers[i];
+            }             
+    }
+
+    for(i = 0 ; i < tam ; i++){
+            if(numbers[i] > maior2 && numbers[i] < maior1){
+                 maior2 = numbers[i];
+             }
+    }
+
+    console.log("O maior numero é: " + maior1);    
+    console.log("O segundo maior numero é: " + maior2);
+    console.log("A multiplicação entre os dois é: "+ maior1 * maior2); 
+
+</script>
+</body>
+</html>

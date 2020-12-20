@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebedeira</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulaLinha () {
+
+        document.write("<br><br>");
+        }
+
+        function mostra (frase) {
+
+        pulaLinha();
+        document.write(frase);
+        }
+        
+        var idUsu = prompt("Qual a sua idade? ");
+        var idMaiorId = prompt("Com qual idade se atinge a maioridade em seu país? ");
+
+        if(idUsu >= idMaiorId){
+
+            mostra("Você pode beber! uhuu mas lembre-se de beber com moderação. ")
+            
+            console.log("Beba com moderação!");
+        }
+
+        else {
+            mostra("Você não pode beber, mas relaxa que você não está perdendo nada.")
+            
+            console.log("Você ainda não pode beber!");
+        }
+
+    </script>
+
+</body>
+</html>

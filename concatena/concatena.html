@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício concatena strings</title>
+</head>
+<body>
+    <script>
+        function pulaLinha () {
+
+        document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+        }
+
+
+        function concatena(st1, st2){
+            return st1 + " " + st2;
+        }
+
+        var strin = prompt("Digite no que pensou: ")
+        var strin2 = prompt("Novamente: ")
+        
+        var hello = ("Olá, mundo!");
+        mostra(hello);
+
+        var endConcatena = concatena(strin, strin2);
+        mostra("É ISSO? " + strin + strin2 + " ? rsrs" );
+
+       
+    </script>
+</body>
+</html>, 

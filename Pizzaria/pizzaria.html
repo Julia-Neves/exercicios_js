@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <script>
+        function puLaLinha(){
+            document.write("<br><br>")
+        }
+
+        var valorPizza = prompt("Digite o preço da pizza: ");
+        var valorVenda = prompt("Digite o valor pelo qual é vendida a pizza: ");
+        var pizzaSabor = prompt("Digite o sabor da pizza: ");
+        var imposto = (valorPizza * 8.9) / 100;
+        var lucro = valorVenda - valorPizza;
+        puLaLinha()
+        
+        document.write("Na pizza de " +pizzaSabor+ ", o lucro líquido é de " +lucro+ ", e o imposto é de " +imposto);
+        
+        
+
+
+    </script>
+    
+</body>
+</html>

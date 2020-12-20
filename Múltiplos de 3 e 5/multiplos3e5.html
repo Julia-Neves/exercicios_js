@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplos de 3 e 5</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("Digite um número: "));
+
+        var somaMulti = 0;
+
+        for (var i = 1; i <num; i++){
+            
+            if (i % 3 == 0 || i % 5 == 0){
+        
+        somaMulti = somaMulti + i;
+        console.log("São múltiplos de 3 e 5: " + i);
+            }
+            else {
+                console.log("Não são: "+ i);
+            }
+        }
+            console.log(somaMulti);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laranjas</title>
+</head>
+<body>
+    <script>
+        function puLaLinha(){
+            document.write("<br><br>");
+        }
+        
+        var qtdLar = prompt("Diga quantas Laranjas você tem: ");
+        var qtdViz = prompt("Diga quantos vizinhos você tem: ");
+        
+        var sobra = qtdLar % qtdViz;
+        var divisao = qtdLar / qtdViz;
+        
+        document.write("Sobram: "+ sobra);
+        puLaLinha();
+        document.write("A divisão é: "+ Math.floor(divisao));
+         
+
+
+    </script>
+</body>
+</html>

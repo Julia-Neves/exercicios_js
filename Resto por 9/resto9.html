@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto 9</title>
+</head>
+<body>
+    <script>
+        function puLaLinha(){
+            document.write("<br><br>")
+        }
+
+        function mostra (frase) {
+
+        document.write(frase);
+        pulaLinha();
+        }
+
+        function restPor9 (num){
+            return num % 9;
+        }
+        
+        var numero = parseInt(prompt("Digite um número aqui: "));
+
+        var restDi = restPor9(numero);
+
+        mostra("O resto do número que você digitou dividido por 9 é: " + restDi + ".");
+        
+    </script>
+</body>
+</html>

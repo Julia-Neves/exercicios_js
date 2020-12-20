@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorista</title>
+</head>
+<body>
+
+    <script>
+    function pulaLinha () {
+
+        document.write("<br><br>");
+    }
+
+    function mostra (frase) {
+
+        pulaLinha();
+        document.write(frase);
+    }
+
+    var idUsua = prompt("Qual a sua idade? ")
+    var idPerm = prompt("Com qual idade se atinge a maioridade em seu pais? ")
+
+    if (idUsua >= idPerm){
+
+        mostra("Você já pode dirigir!");
+
+        console.log("Você já pode dirigir!")
+    }
+
+    else{
+        mostra("Você ainda não pode dirigir!")
+
+        console.log("Você ainda não pode dirigir.")
+    }
+    
+    </script>
+    
+</body>
+</html>

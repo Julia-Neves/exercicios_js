@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha () {
+
+        document.write("<br><br>");
+        }
+
+        function mostra (frase) {
+
+        pulaLinha();
+        document.write(frase);
+        }
+       
+        var corSinal = prompt("Qual a cor do sinal? ");
+
+            switch (corSinal){
+                case "verde":
+                mostra("Pode passar!")
+                console.log("Pode passar.")
+                break;
+
+                case "amarelo":
+                mostra("Melhor freiar!")
+                console.log("Melhor freiar.")
+                break;
+
+                case "vermelho":
+                mostra("Pare já!")
+                console.log("Pare já.")
+                break;
+            }
+         
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -19,13 +19,18 @@
             document.write("<br><br>")
         }
 
-        function carcularInflacaoSeparadamente(valorInicial, valorFinal){
+        function calcularInflacaoSeparadamente(valorInicial, valorFinal){
 
             return (valorFinal - valorInicial) / valorInicial * 100
             puLaLinha()
         }
 
-        document.write("A inflação do tomate é de " + carcularInflacaoSeparadamente (tomate24, tomate30).toFixed(2) + "%.")
+        document.write("A inflação do tomate é de " + calcularInflacaoSeparadamente (tomate24, tomate30).toFixed(2) + "%.")
+        puLaLinha();
+        document.write("A inflação do arroz é de " + calcularInflacaoSeparadamente (arroz24, arroz30).toFixed(2) + "%.")
+        puLaLinha();
+        document.write("A inflação da cenoura é de " + calcularInflacaoSeparadamente (cenoura24, cenoura30).toFixed(2) + "%.")
+
     
 
         

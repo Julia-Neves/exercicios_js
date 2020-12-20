@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de botões com nomes</title>
+</head>
+<body>
+
+    <button onclick= >Clica aqui</button>
+ 
+    <script>
+       
+    var names = ['João', 'Julia', 'Enzo', 'Francisca', 'Wilson']
+        
+        for(i = 0; i < names.length; i++){
+            botao (names[i]);
+        }
+
+        function botao(nomes){
+          document.write("<button onclick='alert(\"" + nomes + "\")'>" + nomes + "</button>");
+        }
+
+    </script>
+</body>
+</html>
