@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César</title>
+</head>
+<body>
+   <script>
+
+    var mensagemUs = prompt("Digite aqui uma mensagem:");
+    var deslocamentoUs = parseInt(prompt("Quantos pulos quer de avanço?"));
+    var meuArray = [];
+
+    function cifraCesar(mensagem, deslocamento) {
+        
+        for (var i = 0; i < mensagem.length; i++) {
+            meuArray.push(mensagem[i].charCodeAt(0) + deslocamento);         
+            console.log(String.fromCharCode(meuArray[i]));
+        }
+    }
+
+    cifraCesar(mensagemUs, deslocamentoUs);
+
+        </script>
+</body>
+</html>
